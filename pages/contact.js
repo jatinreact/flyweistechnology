@@ -1,35 +1,36 @@
-import React, { Component } from 'react';
-import Navbar from '../components/Layouts/Navbar';
-import PageBanner from '../components/Common/PageBanner';
-import ContactInfo from '../components/Contact/ContactInfo';
-import ContactForm from '../components/Contact/ContactForm';
-import Footer from '../components/Layouts/Footer';
+import React, { Component } from "react";
+import Navbar from "../components/Layouts/Navbar";
+import PageBanner from "../components/Common/PageBanner";
+import ContactInfo from "../components/Contact/ContactInfo";
+import ContactForm from "../components/Contact/ContactForm";
+import Footer from "../components/Layouts/Footer";
 
 class Contact extends Component {
-    render() {
-        return (
-            <>
-                <Navbar />
-                 <PageBanner 
-                    pageTitle="Contact Style One" 
-                    homePageUrl="/" 
-                    homePageText="Home" 
-                    activePageText="Contact Style One" 
-                />  
+  render() {
+    return (
+      <>
+        <Navbar />
 
-{/*                 
+        <PageBanner
+          pageTitle="Contact Style One"
+          homePageUrl="/"
+          homePageText="Home"
+          activePageText="Contact Style One"
+        />
+
+        {/*                 
                         <div className='banner_blog'>
                         <img src="/images/contact_img1.png" alt=""  />
                         
                         </div> */}
 
+        <ContactInfo />
 
-                <ContactInfo />
-                <ContactForm />
-                <Footer />
-            </>
-        );
-    }
+        <ContactForm />
+        <Footer />
+      </>
+    );
+  }
 }
 
 export default Contact;
